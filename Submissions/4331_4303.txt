@@ -1,0 +1,67 @@
+25-02-24_13:28:27
+=========================================
+============ AUTOGRADING ================
+=========================================
+Examining contents of 4331_4303.zip
+One jupyter notebook found
+-----------------------------------------
+Unzipping 4331_4303.zip to /home/autograder/unzipped
+Archive:  /home/autograder/temp/4331_4303.zip
+  inflating: /home/autograder/unzipped/4331_4303/preamble.py  
+  inflating: /home/autograder/unzipped/4331_4303/submission_Integrated_project_P3_Validating_our_data_student (1).ipynb  
+  inflating: /home/autograder/unzipped/4331_4303/Integrated_project_P3_Validating_our_data_test_suite.py  
+caution: excluded filename not matched:  __MACOSX/*
+Unzipped successfully
+-----------------------------------------
+Processing notebook
+Notebook processed successfully
+-----------------------------------------
+Checking submission for syntax errors
+Check complete
+-----------------------------------------
+Grading student code
+Student code graded successfully
+PASSED     create_db_engine
+PASSED     query_data
+PASSED     read_from_web_CSV
+PASSED     docstring_length
+PASSED     docstring_length
+PASSED     docstring_length
+FAILED     field_processor
+           Inputs: None
+           assert 11 == 8
+           your output:       where 11 = len(array(['cassava', 'tea', 'wheat', 'potato', 'banana', 'coffee', 'rice',\n       'maize', 'wheat ', 'tea ', 'cassava '], dtype=object))
+           your output:         where array(['cassava', 'tea', 'wheat', 'potato', 'banana', 'coffee', 'rice',\n       'maize', 'wheat ', 'tea ', 'cassava '], dtype=object) = <bound method Series.unique of 0       cassava\n1       cassava\n2           tea\n3       cassava\n4         wheat\n         ...   \n5649     potato\n5650      maize\n5651        tea\n5652    cassava\n5653      wheat\nName: Crop_type, Length: 5654, dtype: object>()
+           your output:           where <bound method Series.unique of 0       cassava\n1       cassava\n2           tea\n3       cassava\n4         wheat\n         ...   \n5649     potato\n5650      maize\n5651        tea\n5652    cassava\n5653      wheat\nName: Crop_type, Length: 5654, dtype: object> = 0       cassava\n1       cassava\n2           tea\n3       cassava\n4         wheat\n         ...   \n5649     potato\n5650      maize\n5651        tea\n5652    cassava\n5653      wheat\nName: Crop_type, Length: 5654, dtype: object.unique
+FAILED     field_data_processor_docstrings
+           Inputs: None
+           assert (None is not None)
+FAILED     field_data_processor_method_docstrings_coverage
+           Inputs: None
+           assert 16.666666666666664 > 60
+PASSED     weather_data_processing
+PASSED     weather_data_processor_docstrings
+PASSED     weather_data_processor_method_docstrings_coverage
+PASSED     read_field_dataframe_shape
+PASSED     field_dataframe_columns
+FAILED     crop_types_are_valid
+           Inputs: None
+           rocessed_field_data =       Field_ID  Elevation   Latitude  ...  Crop_type Standard_yield  Weather_station
+           assert False
+           your output:       where False = all(<generator object test_crop_types_are_valid.<locals>.<genexpr> at 0x7f3b4d6f8eb0>)
+PASSED     field_dataframe_non_negative_elevation
+FAILED     Hypothesis_testing_docstring_coverage
+           Inputs: None
+           assert 25.0 >= 60
+PASSED     filter_field_data
+PASSED     filter_weather_data
+PASSED     run_ttest
+PASSED     print_ttest_results
+-----------------------------------------
+Saving result (76.19) to 4331_4303.csv
+=========================================
+AUTOGRADING COMPLETED WITH EXIT STATUS: 0
+=========================================
+
+Submission Name : 4331_4303.zip
+Grade : 76.19
